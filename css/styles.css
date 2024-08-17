@@ -54,6 +54,12 @@
     padding: 120px 0;
 }
 
+.fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 .container {
     max-width: 1158px;
     margin: auto;
@@ -71,6 +77,8 @@
 }
 
 /* Hover transitions */
+.modal .close-container .icon,
+.modal .close-container,
 .socials .link,
 .portfolio.section .element,
 .card-overlay,
@@ -445,9 +453,52 @@
     background-color: rgba(46, 47, 66, 0.4);
 }
 
+.modal .close-container {
+    background-color: #E7E9FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0000001A;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    align-self: flex-end;
+    transition-property: background-color border;
+}
+
+.modal .close-container:hover,
+.modal .close-container:focus {
+    background-color: #404BBF;
+    border: 1px solid #404BBF;
+}
+
+.modal .close-container .icon {
+    fill: #2E2F42;
+    transition-property: fill;
+}
+
+.modal .legend {
+    font-weight: 500;
+    color: #2E2F42;
+    text-align: center;
+}
+
+.modal .close-container:hover .icon,
+.modal .close-container:hover .icon {
+    fill: #FFFFFF;
+}
+
+
 .modal {
+    display: flex;
+    flex-direction: column;
     background-color: #FCFCFC;
     height: 584px;
-    min-width: 408px;
+    width: 408px;;
     padding: 24px;
+    box-shadow: 0px 1px 1px 0px #00000024,
+                0px 1px 3px 0px #0000001F,
+                0px 2px 1px 0px #00000033;
+    border-radius: 4px;
+
 }
