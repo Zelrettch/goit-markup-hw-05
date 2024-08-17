@@ -430,3 +430,24 @@
 .footer .socials .link:focus {
     background-color: #31D0AA;
 }
+
+
+/* Modal windows and overlays */
+.modal-backdrop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+    background-color: #FCFCFC;
+    height: 584px;
+    min-width: 408px;
+    padding: 24px;
+}
