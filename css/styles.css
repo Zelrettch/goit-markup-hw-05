@@ -497,14 +497,16 @@
 }
 
 .footer .form-container .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: #4D5AE5;
     color: #FFFFFF;
     cursor: pointer;
-    min-width: 169px;
+    min-width: 165px;
     border: 0;
     border-radius: 4px;
-    padding: 8px 64px 8px 24px;
     transition-property: background-color;
 }
 
@@ -514,11 +516,8 @@
 }
 
 .footer .form-container .icon {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%);
-    fill: #FFFFFF
+    fill: #FFFFFF;
+    margin-left: 16px;
 }
 
 /* Modal windows and overlays */
