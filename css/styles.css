@@ -496,11 +496,8 @@
     border-color: #31D0AA;
 }
 
-.footer .form-container .button-container {
-    position: relative;
-}
-
 .footer .form-container .button {
+    position: relative;
     background-color: #4D5AE5;
     color: #FFFFFF;
     cursor: pointer;
@@ -511,8 +508,8 @@
     transition-property: background-color;
 }
 
-.footer .button-container:hover .button,
-.footer .button-container:focus .button {
+.footer .form-container .button:hover ,
+.footer .form-container .button:focus  {
     background-color: #31D0AA;
 }
 
