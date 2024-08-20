@@ -182,7 +182,7 @@
     letter-spacing: 0.04em;
 }
 
-.text-area {
+.text-input.text-area {
     line-height: 1.17;
     color: rgba(46, 47, 66, 0.4);
 }
