@@ -81,11 +81,8 @@
 
 /* Hover transitions */
 .modal,
-.modal-backdrop,
 .footer .form-container .button,
 .footer .form-container .text-input,
-.modal .close-button .icon,
-.modal .close-button,
 .socials .link,
 .portfolio.section .element,
 .card-overlay,
@@ -535,7 +532,7 @@
     visibility: hidden;
     pointer-events: none;
 
-    transition-property: opacity visibility;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -578,7 +575,7 @@
 }
 
 .modal .close-button:hover .icon,
-.modal .close-button:hover .icon {
+.modal .close-button:focus .icon {
     fill: #ffffff;
 } 
 
