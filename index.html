@@ -418,13 +418,13 @@
       </section>
     </main>
 
-    <div class="modal-backdrop">
+    <div class="modal-backdrop is-open">
       <div class="modal">
-        <div class="close-container">
+        <button class="close-container">
             <svg class="icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
-        </div>
+        </button>
         <p class="form-header">
           Leave your contacts and we will call you back
         </p>
@@ -482,7 +482,7 @@
                     <use href="./images/icons.svg#icon-checked"></use>
                   </svg>
                 </span>
-                  <p class="paragraph">I accept the terms and conditions of the</p>
+                  <span class="paragraph">I accept the terms and conditions of the</span>
                   <a href="" class="link">Privacy Policy</a>
               </label>
             </div>
@@ -538,11 +538,11 @@
         <div class="form-block">
           <p class="paragraph">Subscribe</p>
           <form class="form-container">
-            <label>
+            <label class="input-label">
               <input type="email" class="text-input" placeholder="E-mail"/>
             </label>
             <div class="button-container"> 
-              <button class="button">Subscribe</button>
+              <button class="button" type="submit">Subscribe</button>
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-paper-plane"></use>
               </svg>

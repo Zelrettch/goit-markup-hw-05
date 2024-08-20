@@ -177,6 +177,11 @@
     color: #8E8F99;
 }
 
+.text-input {
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
 /* Header styles */
 
 .header {
@@ -463,11 +468,11 @@
 .footer .form-block .paragraph {
     color: #FFFFFF;
     font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .footer .form-container {
     display: flex;
-    margin-top: 16px;
     gap: 24px;
 }
 
