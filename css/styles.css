@@ -71,6 +71,8 @@
     display: block;
     font-family: inherit;
     color: #2E2F42;
+    background-color: transparent;
+    outline: transparent;
 }
 
 .picture {
@@ -80,9 +82,11 @@
 }
 
 /* Hover transitions */
-.modal,
 .footer .form-container .button,
 .footer .form-container .text-input,
+.modal .text-input,
+.modal .close-button .icon,
+.modal .text-input-container .icon,
 .socials .link,
 .portfolio.section .element,
 .card-overlay,
@@ -172,13 +176,13 @@
 .text-area::placeholder,
 .label {
     font-size: 12px;
-    line-height: 1.16em;
+    line-height: 1.17em;
     color: #8E8F99;
+    letter-spacing: 0.04em;
 }
 
 .text-input {
     line-height: 2;
-    letter-spacing: 0.04em;
 }
 
 /* Header styles */
@@ -481,7 +485,6 @@
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px #00000026;
-    background-color: transparent;
     color: #FFFFFF;
     padding-left: 16px;
 }
@@ -491,7 +494,6 @@
 }
 
 .footer .form-container .text-input:focus{
-    outline: none;
     border-color: #31D0AA;
 }
 
@@ -566,7 +568,7 @@
     width: 24px;
     border-radius: 50%;
     align-self: flex-end;
-    transition-property: background-color border;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .close-button .icon {
@@ -593,17 +595,22 @@
     margin-bottom: 16px;
 }
 
+.form-input-unit .label,
+.form-textarea-unit .label {
+    margin-bottom: 4px;
+}
+
+
 .modal .text-input-container {
     position: relative;
-    margin-top: 4px;
 }
 
 .modal .text-area::placeholder {
     color: #75757580;
 }
 
-.modal .form-input-unit + .form-input-unit {
-    margin-top: 8px;
+.modal .form-input-unit {
+    margin-bottom: 8px;
 }
 
 .modal .text-input-container .icon {
@@ -623,6 +630,7 @@
     border-radius: 4px;
     caret-color: #2E2F42;
     color: #2E2F42;
+    transition-property: border-color;
 }
 
 .modal .text-area {
@@ -631,9 +639,8 @@
     padding: 8px 16px;
 }
 
-.modal .form-container .text-input:focus {
+.modal .text-input:focus {
     border-color: #4D5AE5;
-    outline: none;
 }
 
 .modal .form-container .text-input:focus + .icon {
