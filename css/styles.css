@@ -182,6 +182,11 @@
     letter-spacing: 0.04em;
 }
 
+.text-area {
+    line-height: 1.17;
+    color: rgba(46, 47, 66, 0.4);
+}
+
 .text-input {
     line-height: 2;
 }
@@ -649,6 +654,10 @@
     fill: #4D5AE5;
 }
 
+.modal .form-textarea-unit {
+    margin-bottom: 16px;
+}
+
 .modal .custom-checkbox {
     display: inline-block;
     height: 16px;
@@ -660,7 +669,7 @@
 }
 
 .checkbox-container {
-    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
 .checkbox-container .link,
