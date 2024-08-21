@@ -685,10 +685,10 @@
     margin-bottom: 24px;
 }
 
-.checkbox-container .link,
-.checkbox-container .paragraph {
+.modal .checkbox-container .link  {
     display: inline-block;
-    vertical-align: middle;
+    color: #4D5AE5;
+    text-decoration: underline;
 }
 
 .modal .form-container .button {
